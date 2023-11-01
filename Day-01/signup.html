@@ -7,27 +7,37 @@
 </head>
 <body>
     
-    <h2><a href="./signup.html">Signup</a> <a href="./signin.html">SignIn</a></h2>
+   <h3> <marquee behavior="scroll" direction="right">Just SignUp !!</marquee> </h3>
+    <center><h2>SignUp</h2> </center>
 
-    <form action="./signin.html" method="get" id="signup">
+    <form action="./signin.html" method="post" id="signup">
+        <center>
 
         <label for="firstname"> <b>Firstname: </b></label>
-        <input type="text" name="fname" id="firstname"><br>
+        <input type="text" name="fname" id="firstname" placeholder="Firstname" required><br><br>
 
         <label for="lastname"><b>Lastname: </b> </label>
-        <input type="text" name="lname" id="lastname"><br>
+        <input type="text" name="lname" id="lastname" placeholder="Lastname" ><br><br>
 
         <label for="email"> <b>Email: </b></label>
-        <input type="email" name="email" id="email"><br>
+        <input type="email" name="email" id="email" placeholder="Email" required><br><br>
 
         <label for="password"> <b> Password:</b> </label>
-        <input type="password" name="pass"  id="password"><br>
+        <input type="password" name="pass"  id="password" placeholder="Password" required><br><br>
 
-        <label for="addr"> <b>Address: </b> </label><br>
+        <b>Location </b><select name="location" id="location">
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Chennai">Chennai</option>
+        </select><br>
+
+        <label for="addr" ><b>Address: </b> </label><br>
         <textarea name="address" id="addr" cols="30" rows="10" form="signup"></textarea><br><br>
         
         <input type="submit">
-    </form>
     
+    </form>
+    <h3>Already a user ?-> <a href="./signin.html">Signin</a></h3>
+</center>
 </body>
 </html>
